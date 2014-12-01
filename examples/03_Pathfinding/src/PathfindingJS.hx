@@ -47,7 +47,7 @@ class PathfindingJS
         // populate mesh with many square objects
         var object : Object;
         var shapeCoords : Array<Float>;
-        for (i in 0...30){
+        for (i in 0...50){
             trace(' i ' + i );
             object = new Object();
             shapeCoords = new Array<Float>();
@@ -98,9 +98,9 @@ class PathfindingJS
         pathSampler.path = path;
         
         // click/drag
-        Browser.document.body.onmousedown = onMouseDown;
-        Browser.document.body.onmousedown = onMouseUp;
-        Browser.document.body.onmousemove = onMouseMove;
+        view.basicCanvas.canvas.onmousedown = onMouseDown;
+        view.basicCanvas.canvas.onmouseup = onMouseUp;
+        view.basicCanvas.canvas.onmousemove = onMouseMove;
         // animate
         view.basicCanvas.onEnterFrame = onEnterFrame;
         
