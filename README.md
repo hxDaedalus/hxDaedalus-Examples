@@ -1,8 +1,10 @@
-hxDaedalus
-==========
+hxDaedalus-Examples
+===================
 
-This is a Haxe version of the as3 Daedalus-lib you can find the original library here:
-https://code.google.com/p/daedalus-lib/
+This is the examples repository for the Haxe version of the as3 Daedalus-lib.
 
-Licence is MIT for the original and this port.
+These examples require the current haxe hxDaedalus library, which can be found here:
+https://github.com/Justinfront/hxDaedalus
+
+Licence is MIT.
 
