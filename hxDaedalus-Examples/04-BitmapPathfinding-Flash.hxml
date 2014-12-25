@@ -1,0 +1,14 @@
+-lib hxDaedalus
+-cp src/
+-cp ../../src/
+-main BitmapPathfinding04
+-swf-version 11.2
+-swf-header 1024:780:60:FFFFFF
+-swf bin/BitmapPathfinding.swf
+-D fdb
+#-D showVerticesIndices
+-debug
+#mac
+-cmd open bin/BitmapPathfinding.swf
+#win
+#-cmd start bin/BitmapPathfinding.swf

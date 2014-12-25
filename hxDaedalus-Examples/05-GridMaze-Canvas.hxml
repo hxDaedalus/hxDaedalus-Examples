@@ -1,0 +1,12 @@
+-lib hxDaedalus
+-cp src/
+-main GridMaze05
+-D canvasHeader=600:600:60:FFFFFF
+-js web/GridMazeDemo.js
+-D fdb
+#-D showVerticesIndices
+-debug
+#mac
+-cmd open web/GridMazeDemo.html
+#win
+#-cmd start web/GridMazeDemo.html

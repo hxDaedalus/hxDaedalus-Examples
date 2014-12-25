@@ -1,0 +1,17 @@
+#mac
+-cmd mkDir -p bin
+--next
+
+-lib hxDaedalus
+-cp src/
+-main Basics01
+-swf-version 11.2
+-swf-header 600:400:60:FFFFFF
+-swf bin/Basics.swf
+-D fdb
+#-D showVerticesIndices
+-debug
+#mac
+-cmd open bin/Basics.swf
+#win
+#-cmd start bin/Basics.swf

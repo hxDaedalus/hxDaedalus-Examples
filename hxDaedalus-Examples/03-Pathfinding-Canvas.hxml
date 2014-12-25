@@ -1,0 +1,12 @@
+-lib hxDaedalus
+-cp src/
+-main Pathfinding03
+-D canvasHeader=600:600:60:FFFFFF
+-js web/daedalusPathfinding.js
+-D fdb
+#-D showVerticesIndices
+-debug
+#mac
+-cmd open web/DaedalusPathfinding.html
+#win
+#-cmd start web/DaedalusPathfinding.html

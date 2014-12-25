@@ -1,0 +1,13 @@
+-lib hxDaedalus
+-cp src/
+-main GridMaze05
+-swf-version 11.2
+-swf-header 600:600:60:FFFFFF
+-swf bin/GridMaze05.swf
+-D fdb
+#-D showVerticesIndices
+-debug
+#mac
+-cmd open bin/GridMaze05.swf
+#win
+#-cmd start bin/Pathfinding.swf

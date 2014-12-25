@@ -1,0 +1,18 @@
+-lib hxDaedalus
+-cp src/
+-main Basics01
+-java deploySwing
+-D canvasHeader=600:400:60:FFFFFF
+-D windowTitle=Java Swing Daedalus 01 - Basic 
+-D fdb
+#-D showVerticesIndices
+-debug
+#mac
+
+-cmd cd deploySwing/src/
+-cmd cd ../
+# run our application
+-cmd java -jar *.jar
+
+#win
+# not yet implemented
