@@ -8,4 +8,4 @@ https://github.com/Justinfront/hxDaedalus
 
 Licence is MIT.
 
-![My image](https://rawgit.com/Justinfront/hxDaedalus-Examples/master/hxDaedalus-Examples/web/GridMazeDemo.html)
+[View Maze Example](http://rawgit.com/Justinfront/hxDaedalus-Examples/master/hxDaedalus-Examples/web/GridMazeDemo.html)
