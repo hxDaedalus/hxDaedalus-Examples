@@ -2,7 +2,7 @@
 var BitmapPathfinding04js = function() {
 	this.newPath = false;
 	this.mesh = hxDaedalus.factories.RectMesh.buildRectangle(1024,780);
-	this.imageLoader = new hxDaedalus.graphics.js.ImageLoader(["https://raw.githubusercontent.com/Justinfront/hxDaedalus-Examples/master/hxDaedalus-Examples/web//assets/galapagosBW.png","https://raw.githubusercontent.com/Justinfront/hxDaedalus-Examples/master/hxDaedalus-Examples/web/assets/galapagosColor.png"],$bind(this,this.onLoaded));
+	this.imageLoader = new hxDaedalus.graphics.js.ImageLoader(["assets/galapagosBW.png","assets/galapagosColor.png"],$bind(this,this.onLoaded));
 };
 BitmapPathfinding04js.__name__ = true;
 BitmapPathfinding04js.main = function() {
