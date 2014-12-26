@@ -42,7 +42,7 @@ class BitmapPathfinding04js
 		// build a rectangular 2 polygons mesh
 		mesh = RectMesh.buildRectangle( 1024, 780 );
 		
-		imageLoader = new ImageLoader([ 'assets/galapagosBW.png', 'assets/galapagosColor.png' ], onLoaded );
+		imageLoader = new ImageLoader([ 'https://raw.githubusercontent.com/Justinfront/hxDaedalus-Examples/master/hxDaedalus-Examples/web//assets/galapagosBW.png', 'https://raw.githubusercontent.com/Justinfront/hxDaedalus-Examples/master/hxDaedalus-Examples/web/assets/galapagosColor.png' ], onLoaded );
 	}
 	
 	private function onLoaded():Void {
