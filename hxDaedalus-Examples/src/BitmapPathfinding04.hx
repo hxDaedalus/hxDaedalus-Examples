@@ -66,11 +66,16 @@ class BitmapPathfinding04
 	public static function main(): Void {
 		#if flash 		Lib.current.addChild(new BitmapPathfinding04());
 		#elseif java 	new BitmapPathfinding04();
-		#end
+		#elseif js		new BitmapPathfinding04();
+		#end	
 	}
 
 	public function new() {
-		super();
+		
+        #if flash 		super(); 
+		#elseif java	super();
+		#elseif js
+		#end
 		
 		// build a rectangular 2 polygons mesh
 		_mesh = RectMesh.buildRectangle( 1024, 780 );
@@ -108,6 +113,10 @@ class BitmapPathfinding04
 		
 		// show the image bmp
 		add(new JLabel(new ImageIcon(_overlay)));
+		
+		#elseif js
+		
+		var imgLoader = new ImageLoader()
 		
 		#end
 		
