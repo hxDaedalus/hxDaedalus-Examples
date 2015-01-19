@@ -46,32 +46,22 @@ class BitmapPathfinding04js
 	
 	public function new(){
 		// build a rectangular 2 polygons mesh
-		mesh = RectMesh.buildRectangle( 1024, 780 );//'assets/galapagosBW.png', 
-		imageLoader = new ImageLoader([ 'assets/galapagosColor.png' ], onLoaded );
+		mesh = RectMesh.buildRectangle( 1024, 780 );
+		// Replaced this image 'assets/galapagosBW.png'
+		// with encoded gif at bottom of class    galapagosBW66encoded
+		// due to limitations when trying to display example using github raw.galapagosBW66encoded
+		imageLoader = new ImageLoader([ galapagosBW66encoded, 'assets/galapagosColor.png' ], onLoaded );
 	}
 	
 	private function onLoaded():Void {
 		var images: StringMap<ImageElement> = imageLoader.images;
       	basicCanvas = new BasicCanvas();
         view = new SimpleView(basicCanvas);		
-		
-		// Replaced this image 'assets/galapagosBW.png'
-		// with encoded gif at bottom of class    galapagosBW66encoded
-		// due to limitations when trying to display example using github raw.galapagosBW66encoded
-		img = js.Browser.document.createImageElement();
-		var imgStyle = img.style;
-		imgStyle.left = '0px';
-		imgStyle.top = '0px';
-		imgStyle.paddingLeft = "0px";
-		imgStyle.paddingTop = "0px";
-		imgStyle.position = "absolute";
-		img.src = galapagosBW66encoded;
-		
+		img = images.get( galapagosBW66encoded.split('/').pop() );
 		surface = basicCanvas.surface;
 		w = img.width;
 		h = img.height;
 		surface.drawImage( img, 0, 0, w, h );
-		
 		var pixels =  Pixels.fromImageData(surface.getImageData(0, 0, w, h));
 		surface.clearRect( 0, 0, w, h );
 		img = images.get("galapagosColor.png");
